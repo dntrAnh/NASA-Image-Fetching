@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: stretch; 
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.history-section {
+  flex: 1;
+  overflow-y: auto; 
+}
+
+.ban-section {
+  flex: 1;
+  overflow-y: auto; 
+}
+
+.main-section {
+  flex: 2;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fetched-image {
+  max-width: 100%; 
+  max-height: 70vh; 
+  object-fit: contain; 
+  margin-top: 10px; 
+}
+
+.history-section ul,
+.ban-section ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.history-section li,
+.ban-section li {
+  margin: 5px 0; 
+}
